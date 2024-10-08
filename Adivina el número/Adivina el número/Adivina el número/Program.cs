@@ -23,7 +23,11 @@
                 }
 
                 //Generar numero aleatorio
+                int rangoMin = 0;
+                int rangoMax = 0;
 
+
+                //Ejecutando numero de bloques segun los jugadores
 
             }
 
