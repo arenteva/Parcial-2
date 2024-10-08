@@ -80,10 +80,10 @@
                         Console.WriteLine("¡El número es menor!");
                     }
 
-                    // Incrementar el turno, y volver al primer jugador si es necesario
+                    // volver al primer jugador si es necesario
                     turno = (turno + 1) % jugadores;
 
-                    // Pausa antes de continuar (usando ReadLine para simplificar)
+                    // Pausa antes de continuar 
                     if (!haGanado)
                     {
                         Console.WriteLine("Presiona Enter para continuar...");
