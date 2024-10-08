@@ -89,7 +89,7 @@
             }
         }
 
-        Console.WriteLine("¡Gracias por usar el sistema!");
+        Console.WriteLine("¡Vuelva pronto Adios!");
     }
 }
 
