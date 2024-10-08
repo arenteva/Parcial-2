@@ -10,9 +10,9 @@
             int estudiantesGanaron = 0;
             int estudiantesPerdieron = 0;
 
-            // Ingresar número de estudiantes
+            // Ingresar número de estudiantes a calificar
             Console.Clear();
-            Console.WriteLine("Sistema de Evaluación de Notas de Estudiantes");
+            Console.WriteLine("Sistema de Evaluación Notas de Estudiantes");
             Console.Write("Ingrese la cantidad de estudiantes: ");
             int cantidadEstudiantes = int.Parse(Console.ReadLine());
 
