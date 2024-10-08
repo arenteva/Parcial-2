@@ -22,7 +22,7 @@
                 Console.Clear();
                 Console.WriteLine($"Ingrese las notas del Estudiante {i}");
 
-                // Ingresar cantidad de asignaturas
+                //Numero de asignaturas 
                 Console.Write("¿Cuántas asignaturas cursa el estudiante? ");
                 int numAsignaturas = int.Parse(Console.ReadLine());
 
