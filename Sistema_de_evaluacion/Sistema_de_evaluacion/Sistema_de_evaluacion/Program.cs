@@ -26,7 +26,7 @@
                 Console.Write("¿Cuántas asignaturas cursa el estudiante? ");
                 int numAsignaturas = int.Parse(Console.ReadLine());
 
-                // Inicializar la variable para el total de las notas
+                // inicio de la variable para el total de las notas
                 double sumaNotas = 0;
 
                 // Ingresar las notas de cada asignatura
