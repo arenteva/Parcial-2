@@ -75,7 +75,7 @@
                 Console.WriteLine();
             }
 
-            // Mostrar cuántos estudiantes ganaron y cuántos perdieron
+            // Mostrar cuántos estudiantes ganaron y cuántos perdieron 
             Console.WriteLine("Resultados finales:");
             Console.WriteLine($"Estudiantes que ganaron: {estudiantesGanaron}");
             Console.WriteLine($"Estudiantes que perdieron: {estudiantesPerdieron}");
