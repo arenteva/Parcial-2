@@ -67,7 +67,7 @@
                     estudiantesPerdieron++;
                 }
 
-                // Mostrar resultado del estudiante
+                // Mostrar resultado del estudiante 
                 Console.Clear();
                 Console.WriteLine($"Estudiante {i}:");
                 Console.WriteLine($"Promedio: {promedio:F2}");
