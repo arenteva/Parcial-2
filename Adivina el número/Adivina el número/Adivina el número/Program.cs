@@ -27,7 +27,23 @@
                 int rangoMax = 0;
 
 
-                //Ejecutando numero de bloques segun los jugadores
+                //ejecuatando opciones segun numero de jugadores
+                switch (jugadores)
+                {
+                    case 2:
+                        rangoMax = 50;
+                        break;
+                    case 3:
+                        rangoMax = 100;
+                        break;
+                    case 4:
+                        rangoMax = 200;
+                        break;
+                }
+
+                //generar numero aleatorio entre un rango determinado
+                Random random = new Random();
+                int numeroAleatorio = random.Next(rangoMin, rangoMax + 1);
 
             }
 
