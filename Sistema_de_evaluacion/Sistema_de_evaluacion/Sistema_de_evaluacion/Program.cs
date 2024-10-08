@@ -81,9 +81,9 @@
             Console.WriteLine($"Estudiantes que perdieron: {estudiantesPerdieron}");
 
             // Preguntar si desea ingresar otro grupo de estudiantes
-            Console.Write("¿Desea ingresar otro grupo de estudiantes? (s/n): ");
-            string respuesta = Console.ReadLine().ToLower();
-            if (respuesta != "s")
+            Console.Write("¿Desea ingresar otro grupo de estudiantes? (S/N): ");
+            string respuesta = Console.ReadLine().ToUpper();
+            if (respuesta != "S")
             {
                 continuar = false;
             }
