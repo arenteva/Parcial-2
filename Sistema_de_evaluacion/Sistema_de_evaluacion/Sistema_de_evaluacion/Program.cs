@@ -16,7 +16,7 @@
             Console.Write("Ingrese la cantidad de estudiantes: ");
             int cantidadEstudiantes = int.Parse(Console.ReadLine());
 
-            // Iterar sobre los estudiantes
+            // ingresar notas de los estudiantes
             for (int i = 1; i <= cantidadEstudiantes; i++)
             {
                 Console.Clear();
