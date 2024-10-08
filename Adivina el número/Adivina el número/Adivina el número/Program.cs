@@ -45,6 +45,58 @@
                 Random random = new Random();
                 int numeroAleatorio = random.Next(rangoMin, rangoMax + 1);
 
+                //proceso del juego 
+                //inicio jugador actual 
+                int turno = 0; 
+                bool haGanado = false;
+                int[] intentos = new int[jugadores];
+
+                while (!haGanado)
+                {
+                    Console.Clear();
+                    Console.WriteLine($"Jugador {turno + 1}, es tu turno!");
+                    Console.Write($"Introduce un número entre {rangoMin} y {rangoMax}: ");
+
+                    int intento;
+                    while (!int.TryParse(Console.ReadLine(), out intento) || intento < rangoMin || intento > rangoMax)
+                    {
+                        Console.WriteLine($"Por favor, introduce un número válido entre {rangoMin} y {rangoMax}.");
+                        Console.Write($"Jugador {turno + 1}, intenta de nuevo: ");
+                    }
+
+                    // Verificar si es correcto el numero
+                    if (intento == numeroAleatorio)
+                    {
+                        Console.Clear();
+                        Console.WriteLine($"¡Jugador {turno + 1} HAS GANADO! El número era {numeroAleatorio}.");
+                        haGanado = true;
+                    }
+                    else if (intento < numeroAleatorio)
+                    {
+                        Console.WriteLine("¡El número es mayor!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("¡El número es menor!");
+                    }
+
+                    // Incrementar el turno, y volver al primer jugador si es necesario
+                    turno = (turno + 1) % jugadores;
+
+                    // Pausa antes de continuar (usando ReadLine para simplificar)
+                    if (!haGanado)
+                    {
+                        Console.WriteLine("Presiona Enter para continuar...");
+                        Console.ReadLine();
+                    }
+                }
+
+
+
+
+
+
+
             }
 
 
