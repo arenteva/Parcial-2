@@ -8,8 +8,8 @@
         {
             Estudiante estudiante = new Estudiante();
 
-            estudiante.Creditos = ObtenerEntrada("Ingrese la cantidad de créditos: ", "Por favor, ingrese un número válido.");
-            estudiante.Estrato = ObtenerEntrada("Ingrese el estrato del estudiante (1, 2 o 3): ", "Por favor, ingrese un número válido entre 1 y 3.");
+            estudiante.Creditos = ObtenerEntrada("Ingrese la cantidad de créditos: ", "");
+            estudiante.Estrato = ObtenerEntrada("Ingrese el estrato del estudiante (1, 2 o 3): ", "");
 
             decimal costoMatricula = estudiante.CalcularMatricula();
             decimal subsidio = estudiante.CalcularSubsidio();
